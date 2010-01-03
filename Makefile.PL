@@ -1,0 +1,15 @@
+use inc::Module::Install;
+name 'Plack-Middleware-Test-Recorder';
+all_from 'lib/Plack/Middleware/Test/Recorder.pm';
+readme_from 'lib/Plack/Middleware/Test/Recorder.pm';
+requires 'Test::WWW::Mechanize::PSGI';
+requires 'Plack::Request';
+requires 'Plack::Test';
+requires 'Data::Dump';
+build_requires 'Test::More';
+use_test_base;
+test_requires 'Test::Requires';
+auto_include_deps;
+author_tests('xt');
+auto_set_repository;
+WriteAll;

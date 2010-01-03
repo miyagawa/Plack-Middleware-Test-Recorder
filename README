@@ -1,0 +1,29 @@
+NAME
+    Plack::Middleware::Test::Recorder - Record requests to replay as a unit
+    test
+
+SYNOPSIS
+      enable "Test::Recorder";
+
+      # access /recorder/start to start recording
+      # access /recorder/stop to stop and save a test file
+
+DESCRIPTION
+    Plack::Middleware::Test::Recorder is a Plack middleware component to
+    record HTTP requests and saves them as a Perl unit test script using
+    Test::WWW::Mechanize::PSGI.
+
+AUTHOR
+    Tatsuhiko Miyagawa <miyagawa@bulknews.net>
+
+    Moritz Onken wrote CatalystX::Test::Recorder which inspires this module.
+
+    Leon Brocard wrote Test::WWW::Mechanize::PSGI.
+
+LICENSE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+SEE ALSO
+    CatalystX::Test::Recorder Test::WWW::Mechanize::PSGI
+
