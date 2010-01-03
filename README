@@ -13,6 +13,12 @@ DESCRIPTION
     record HTTP requests and saves them as a Perl unit test script using
     Test::WWW::Mechanize::PSGI.
 
+TODO
+    *   Work with Debug panel and such so users can input tests on browsers.
+
+    *   Current serialization of Plack::Request is a hack. Should update
+        when Plack::Request is update to support rewindable POST request.
+
 AUTHOR
     Tatsuhiko Miyagawa <miyagawa@bulknews.net>
 

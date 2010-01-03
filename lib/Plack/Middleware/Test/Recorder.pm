@@ -92,6 +92,21 @@ Plack::Middleware::Test::Recorder is a Plack middleware component to
 record HTTP requests and saves them as a Perl unit test script using
 L<Test::WWW::Mechanize::PSGI>.
 
+=head1 TODO
+
+=over 4
+
+=item *
+
+Work with Debug panel and such so users can input tests on browsers.
+
+=item *
+
+Current serialization of Plack::Request is a hack. Should update when
+Plack::Request is update to support rewindable POST request.
+
+=back
+
 =head1 AUTHOR
 
 Tatsuhiko Miyagawa E<lt>miyagawa@bulknews.netE<gt>
